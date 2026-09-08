@@ -1,10 +1,11 @@
-﻿# INTERNSHIP TECHNICAL PROJECT REPORT
+# INTERNSHIP TECHNICAL PROJECT REPORT
 
 **PROJECT TITLE:** CyberForge: Interactive Web Security Simulation & Vulnerability Lab Platform  
 **ORGANIZATION:** Trinetlayer  
 **INTERN NAME:** Bharat Kushwah  
 **PROJECT MENTOR / SUPERVISOR:** Yash Sir  
 **SUBMISSION DATE:** September 2026  
+**LIVE DEMO (VERCEL):** [https://cyberforge-inky.vercel.app/](https://cyberforge-inky.vercel.app/)  
 **REPOSITORY URL:** [https://github.com/Bharatkushwah02/cyberforge](https://github.com/Bharatkushwah02/cyberforge)  
 **FRAMEWORK & TECH STACK:** React 19 / TypeScript / Tailwind CSS / Vite / Client-Side Relational Engine  
 
@@ -253,8 +254,10 @@ execFile('/bin/ping', ['-c', '2', sanitizedIpAddress], (error, stdout) => { ... 
   - Successfully committed and pushed to GitHub:
     - **Remote**: `https://github.com/Bharatkushwah02/cyberforge.git`
     - **Branch**: `main`
-- **Cloud Deployment Preparedness**:
-  - Configured with `vercel.json` routing rewrites, making it ready for 1-click cloud deployment.
+- **Cloud Deployment Preparedness & Live Status**:
+  - Configured with `vercel.json` routing rewrites.
+  - Successfully deployed to Vercel production: **[https://cyberforge-inky.vercel.app/](https://cyberforge-inky.vercel.app/)**
+  - Instantaneous global availability with zero cold-start latency.
 
 ---
 
