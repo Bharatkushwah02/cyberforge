@@ -28,14 +28,6 @@ import {
 } from '../lib/sounds';
 
 
-
-// ⚠️ DEMO KEYS ONLY - Intentionally exposed for GhostJS demo video
-
-// Exposed API Keys (for security testing demo)
-const GEMINI_API_KEY = "AIzaSyDPCLI-Lghxu98r1yiIfEyuQXPzkWmnNtg";
-const OPENAI_API_KEY = "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";
-const GITHUB_TOKEN = "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";
-
 // Store in a hidden object (or just leave as const - doesn't matter for GhostJS detection)
 const ExposedSecrets = {
   gemini: GEMINI_API_KEY,
