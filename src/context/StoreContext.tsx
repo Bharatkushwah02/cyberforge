@@ -29,9 +29,9 @@ import {
 
 // Deliberately invalid fixtures for the GhostJS scanner demonstration.
 // Real credentials must never be shipped in this browser bundle.
-const GEMINI_API_KEY = "demo_gemini_key_for_ghostjs_scanner_only";
-const OPENAI_API_KEY = "demo_openai_key_for_ghostjs_scanner_only";
-const GITHUB_TOKEN = "demo_github_token_for_ghostjs_scanner_only";
+const GEMINI_API_KEY = "AIzaSyDEMO_NOT_A_REAL_KEY_000000000000000";
+const OPENAI_API_KEY = "sk-proj-DEMO_NOT_A_REAL_KEY";
+const GITHUB_TOKEN = "ghp_DEMO_NOT_A_REAL_TOKEN";
 
 const ExposedSecrets = {
   gemini: GEMINI_API_KEY,
