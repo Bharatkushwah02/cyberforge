@@ -115,6 +115,17 @@ export function Navbar() {
             >
               All 5 Labs
             </button>
+
+            <button
+              onClick={() => setCurrentView('chat')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer ${
+                currentView === 'chat'
+                  ? 'bg-emerald-500/20 text-emerald-300'
+                  : 'text-emerald-400 hover:bg-emerald-500/10'
+              }`}
+            >
+              AI Chat
+            </button>
           </nav>
 
           {/* Quick Lab Selector Dropdown */}

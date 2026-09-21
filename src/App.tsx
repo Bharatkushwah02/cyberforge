@@ -11,6 +11,7 @@ import { OrderHistoryView } from './components/views/OrderHistoryView';
 import { PathTraversalView } from './components/views/PathTraversalView';
 import { CommandInjectionView } from './components/views/CommandInjectionView';
 import { LabCatalogView } from './components/views/LabCatalogView';
+import { ChatView } from './components/views/ChatView';
 import { ViewSourceModal } from './components/modals/ViewSourceModal';
 import { SolutionDrawer } from './components/modals/SolutionDrawer';
 import { InterceptorDrawer } from './components/modals/InterceptorDrawer';
@@ -41,6 +42,7 @@ export function App() {
         {currentView === 'docs' && <PathTraversalView />}
         {currentView === 'diagnostics' && <CommandInjectionView />}
         {currentView === 'labs' && <LabCatalogView />}
+        {currentView === 'chat' && <ChatView />}
       </main>
 
       {/* Footer */}

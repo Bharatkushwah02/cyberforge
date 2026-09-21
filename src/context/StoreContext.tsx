@@ -106,7 +106,7 @@ interface StoreContextType {
   reviews: Review[];
   uploadedFiles: UploadedFile[];
   databaseUsers: User[];
-  currentView: 'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs';
+  currentView: 'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs' | 'chat';
   selectedProductId: number;
   soundEnabled: boolean;
   toasts: ToastMessage[];
@@ -118,7 +118,7 @@ interface StoreContextType {
   setActiveLabId: (labId: LabId | 'catalog') => void;
   markLabSolved: (labId: LabId) => void;
   resetAllProgress: () => void;
-  setCurrentView: (view: 'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs') => void;
+  setCurrentView: (view: 'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs' | 'chat') => void;
   setSelectedProductId: (id: number) => void;
   toggleSound: () => void;
   setIsSourceModalOpen: (open: boolean) => void;
@@ -216,7 +216,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const [reviews, setReviews] = useState<Review[]>(INITIAL_REVIEWS);
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
   
-  const [currentView, setCurrentViewState] = useState<'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs'>(() => {
+  const [currentView, setCurrentViewState] = useState<'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs' | 'chat'>(() => {
     try {
       const savedUser = localStorage.getItem('cyberforge_active_user');
       return savedUser ? 'store' : 'login';
@@ -291,7 +291,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  const setCurrentView = (view: 'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs') => {
+  const setCurrentView = (view: 'store' | 'login' | 'product' | 'cart' | 'orders' | 'docs' | 'diagnostics' | 'labs' | 'chat') => {
     if (!user && view !== 'login') {
       addToast('Authentication Required', 'Please register an account or sign in to access the labs.', 'info');
       setCurrentViewState('login');
