@@ -28,6 +28,18 @@ import {
 } from '../lib/sounds';
 
 
+// ⚠️ DEMO KEYS - Using environment variables for security testing
+
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSy_DEMO_KEY";
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || "sk-proj-DEMO_KEY";
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN || "ghp_DEMO_TOKEN";
+
+const ExposedSecrets = {
+  gemini: GEMINI_API_KEY,
+  openai: OPENAI_API_KEY,
+  github: GITHUB_TOKEN
+};
+
 
 export interface ToastMessage {
   id: string;
