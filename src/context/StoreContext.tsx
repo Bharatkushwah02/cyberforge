@@ -12,7 +12,6 @@ import {
 } from '../types/store';
 import {
   ADMIN_USER,
-  DEFAULT_USER,
   INITIAL_ORDERS,
   INITIAL_PRODUCTS,
   INITIAL_REVIEWS,
@@ -28,11 +27,11 @@ import {
 } from '../lib/sounds';
 
 
-// ⚠️ DEMO KEYS - Using environment variables for security testing
-
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSy_DEMO_KEY";
-const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || "sk-proj-DEMO_KEY";
-const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN || "ghp_DEMO_TOKEN";
+// Deliberately invalid fixtures for the GhostJS scanner demonstration.
+// Real credentials must never be shipped in this browser bundle.
+const GEMINI_API_KEY = "demo_gemini_key_for_ghostjs_scanner_only";
+const OPENAI_API_KEY = "demo_openai_key_for_ghostjs_scanner_only";
+const GITHUB_TOKEN = "demo_github_token_for_ghostjs_scanner_only";
 
 const ExposedSecrets = {
   gemini: GEMINI_API_KEY,
