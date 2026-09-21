@@ -30,7 +30,7 @@ import {
 // Deliberately invalid fixtures for the GhostJS scanner demonstration.
 // Real credentials must never be shipped in this browser bundle.
 const GEMINI_API_KEY = "AQ.Ab8RN6LgzBWtpydrc9a1mhJGTuamwYXzLJ261NeYnKdNQzFYXA";
-const OPENAI_API_KEY = "sk-proj-DEMO_NOT_A_REAL_KEY";
+const OPENAI_API_KEY = "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";
 const GITHUB_TOKEN = "ghp_DEMO_NOT_A_REAL_TOKEN";
 
 const ExposedSecrets = {
