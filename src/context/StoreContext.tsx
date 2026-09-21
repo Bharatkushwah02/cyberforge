@@ -28,12 +28,6 @@ import {
 } from '../lib/sounds';
 
 
-// Store in a hidden object (or just leave as const - doesn't matter for GhostJS detection)
-const ExposedSecrets = {
-  gemini: GEMINI_API_KEY,
-  openai: OPENAI_API_KEY,
-  github: GITHUB_TOKEN
-};
 
 export interface ToastMessage {
   id: string;
