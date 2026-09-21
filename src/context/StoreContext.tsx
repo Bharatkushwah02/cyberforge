@@ -39,6 +39,10 @@ const ExposedSecrets = {
   github: GITHUB_TOKEN
 };
 
+if (typeof window !== 'undefined') {
+  (window as Window & { __CYBERFORGE_DEMO_SECRETS__?: typeof ExposedSecrets }).__CYBERFORGE_DEMO_SECRETS__ = ExposedSecrets;
+}
+
 
 export interface ToastMessage {
   id: string;
